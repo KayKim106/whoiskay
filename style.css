@@ -255,7 +255,7 @@ margin-bottom:20px;
    
 }
 a:link{
-    color:#262626;
+    color:white;
     text-decoration: none;
     cursor: pointer;
 }
@@ -266,8 +266,8 @@ a:link{
     font-size:1.5rem;
 }
 .btnD2{
-    background:#262626;
-    color:#fff;
+    background:white;
+    color:#000;
     border-radius:30px;
     padding:10px 20px;
     float:right;
@@ -275,11 +275,13 @@ a:link{
 }
 .btnD2 a{
     color:white;
+    text-decoration:none;
 }
 .btnD2:hover{
-    color:#fff;
+    background:black;
+    color:whtie;
     transition:0.8s;
-    opacity:.4;
+ 
 }
 
 .contact{
