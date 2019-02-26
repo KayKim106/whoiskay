@@ -425,7 +425,7 @@ ul li{
 }
 
 .row{
-    margin-top:50px;
+    margin-top:30px;
 }
 
 .main_title_skills{
@@ -461,7 +461,7 @@ ul li{
             font-size:3rem;
     }
     .headerText h2{
-        font-size:2rem;
+        font-size:1.8rem;
     }
 }
 .profile_text, .typed{
