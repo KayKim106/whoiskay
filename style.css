@@ -64,9 +64,9 @@ p
     transform:rotate(180deg);
     transition:0.5s;
 }
-.nav-brand{
-    transition:0.8s;
-    transform:rotate(360deg);
+.navbar-brand {
+    
+    transition:0.5s;
 }
 
 .banner{
@@ -77,6 +77,7 @@ p
    background:url(images/main_background.jpg);
    background-size:cover;
    margin-bottom:0;
+   background-attachment:fixed;
 }
 .sec{
     height:100vh
@@ -126,14 +127,15 @@ height:100vh;
 }
 .contentBox h1{
     font-weight: 800;
-    color:#ccc;
+    color:rgb(155, 154, 154);
     text-transform: uppercase;
     font-size:3rem;
 }
 
 .sec1{
-    padding:100px 0;
-    background:rgb(5, 4, 22)
+    padding:30px 0;
+    background:rgb(5, 4, 22);
+   
 }
 .headerText h2{
 font-size:2.5rem;
@@ -145,11 +147,12 @@ margin-bottom:20px;
 }
 .placeBox{
     position:relative;
-    max-width:300px;
+    max-width:330px;
     height:300px;
     margin:0 auto;
     margin-top:30px;
-    background: #f7f7f7;;
+    background: #f7f7f7;
+    
 }
 .placeBox imgBX{
     object-fit:cover;
@@ -157,10 +160,19 @@ margin-bottom:20px;
     height:100%;
     min-height:250px;
     transition:0.4s;
+    border-radius:10px 0 0 10px;
 }
 .project-box:hover{
-    opacity:0.9;
-    transition:0.4s;
+    opacity:0.7;
+    transition:1s;
+    transform:scale(1.1);
+}
+.project-box{
+    transition:1s;
+}
+
+.blogspot,.imgBX ,.blogspot,.project-box ,.imageBox{
+    border-radius: 30px;
 }
 .placeBox .content{
     position: absolute;
@@ -192,10 +204,10 @@ margin-bottom:20px;
 .sec2{
     position:relative;
     background:url(images/sec2_background.jpg);
-
+    background-attachment:fixed;
     height:100vh;
     background-size:cover;
-
+    padding:10px;
 }
 
 .sec2 h2{
@@ -220,12 +232,15 @@ margin-bottom:20px;
 
 .blog{
     position:relative;
-    padding:100px 0;
-    background:#000;
+   padding:10px;
+    background:white
+}
+.blog h2{
+    color:black;
 }
 .blogspot{
     position:relative;
-    margin-top:30px;
+    margin-top:10px;
     width:100%;
     background:#fff;
  
@@ -237,6 +252,12 @@ margin-bottom:20px;
 }
 .blogspot .content{
     padding:15px;
+   
+}
+a:link{
+    color:#262626;
+    text-decoration: none;
+    cursor: pointer;
 }
 .blogspot .content h1{
     margin:0;
@@ -262,7 +283,9 @@ margin-bottom:20px;
     position:relative;
     padding:100px 0;
     background-size:cover;
-    min-height:100vh
+    min-height:100vh;
+    background: linear-gradient(to top, #4b6cb7, #182848);
+   
 }
 
 .contact .form-group{
@@ -271,8 +294,8 @@ margin-bottom:20px;
     border:none;
     border-radius:0;
     height:80px;
-    background:rgba(255,255,255,.6);
-    color:black;
+    background:transparent;
+    color:white;
     font-size:1.25rem;
 }
 
@@ -302,7 +325,7 @@ margin-bottom:20px;
 }
 
 footer{
-    background:#000;
+    background:rgb(17, 17, 37);
     padding:50px 0 0 ;
 }
 .sci{
@@ -330,9 +353,19 @@ footer{
     margin-top:20px;
     text-align:center;
     color:#777;
+    transition:0.5s;
 }
 .cpryt:hover, .cpryt p{
     color:#fff;
+    transition:0.5s;
+}
+.cpryt-container{
+    background:rgb(24, 28, 43);
+   width:100%;
+   text-align:center;
+   justify-content: center;
+   align-items:center;
+  
 }
 .navbar-brand:hover{
     position: absolute;
@@ -425,8 +458,70 @@ ul li{
     .headerText h2{
         font-size:2rem;
     }
-  
-
-  
+}
+.profile_text, .typed{
+    color:rgb(181, 186, 192);
 }
 
+.profile_box{
+    background:rgb(41, 49, 78);
+    border-radius:40%;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+    margin-left:0;
+    margin-bottom:10px;
+}
+.content_box{
+    margin-top:14px;
+}
+
+.profile_picture{
+    height:100%;
+    width:100%;
+    border-radius:45%;
+    transition:0.8s;
+   
+    }
+.profile_picture:before{
+    content:'';
+    height:100%;
+    width:100%;
+    background:green;
+    transform:scale(1);
+    transition:0.5s;
+    opacity:0.8;
+}
+.profile_picture:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+}
+.profile_sub_text{
+    color:rgb(90, 120, 155)
+}
+.profile_container{
+  margin:0;
+}
+.project-box-container{
+    margin:25px;
+    
+}
+.project-box .blogspot{
+    border:2px solid rgb(241, 242, 255);
+}
+@keyframes animate
+{
+    
+        0%{
+            transforms:scale(0.92) rotate(0deg);
+        }
+        100%{
+            transforms:scale(0.92) rotate(360deg);
+        }
+    
+}
+
+.interest_box
+{
+    margin:0 5px 0 5px;
+}
