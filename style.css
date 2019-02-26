@@ -221,7 +221,7 @@ margin-bottom:20px;
 
 .btnD1{
     border: 2px solid #fff;
-    color:#000;
+    color:rgb(24, 28, 43);
     background:#fff;
     padding:15px 50px;
     border-radius:50px;
@@ -267,7 +267,7 @@ a:link{
 }
 .btnD2{
     background:white;
-    color:#000;
+    color:rgb(24, 28, 43);
     border-radius:30px;
     padding:10px 20px;
     float:right;
@@ -278,7 +278,7 @@ a:link{
     text-decoration:none;
 }
 .btnD2:hover{
-    background:black;
+    background:rgb(5, 4, 22);
     color:whtie;
     transition:0.8s;
  
@@ -315,7 +315,7 @@ a:link{
 .btnD3{
         border: 2px solid #000;
         color:#fff;
-        background:#000;
+        background:rgb(24, 28, 43);
         padding:15px 50px;
         border-radius:50px;
         outline:none;
@@ -439,12 +439,37 @@ ul li{
         padding-right:1rem;
         padding-left:1rem;
     }
+  
 }
 
 @media(max-width:992px){
     .nav-light .nabar-toggler{
        background:#000;
        border-radius:0;
+    }
+
+    .contentBox h1{
+        font-size:30px !important;
+    }
+    .contentBox p{
+        font-size:20px !important;
+    }
+    .profile_box{
+        display:none;
+    }
+    .profile_sub_text{
+        display:none;
+    }
+    .main_title{
+        font-size:15px;
+    }
+    .main_title_skils{
+        margin-top:25px;
+        font-size:13px;
+        margin-left:-15px;
+    }
+    .sub_title{
+        font-size:12px;
     }
     .banner{
         min-height:100vh;
