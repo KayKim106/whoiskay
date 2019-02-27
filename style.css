@@ -65,7 +65,9 @@ p
     transition:0.5s;
 }
 .navbar-brand {
-    
+    font-size:20px;
+    font-weight:bold;
+    color:white !important;
     transition:0.5s;
 }
 
@@ -73,41 +75,29 @@ p
    position:relative;
    top:0;
    width:100%;
-   height:100vh;
-   background:url(images/main_background.jpg);
+   height:100%;
+   background:url(images/backgrounds.jpg);
    background-size:cover;
    margin-bottom:0;
-   background-attachment:fixed;
+   background-attachment: fixed;
+  
+}
+.banner .contentBox h2{
+    margin-right:795px !important;
+    color:black;
+   
+}
+.banner .contentBox p {
+    margin-right:869px !important;
+    color:white;
+    position: absolute;
+}
+.contentBox{
+    margin-top:32px;
 }
 .sec{
     height:100vh
 }
-/* .banner:before,
-.sec1:before,
-.sec2:before,
-.contact:before {
-    content:'';
-    position: absolute;
-    top:0;
-    left:0;
-    widows: 100%;
-    height:400px;
-    background:linear-gradient(#000,transparent);
-    pointer-events: none;
-}
-.banner:after,
-.sec1:after,
-.sec2:after,
-.contact:after{
-    content:'';
-    position: absolute;
-    bottom:0;
-    left:0;
-    widows: 100%;
-    height:400px;
-    background:linear-gradient(360deg,#000,transparent);
-    pointer-events: none;
-} */
 
 .height100p{
 height:100vh;
@@ -161,19 +151,17 @@ margin-bottom:20px;
     min-height:250px;
     transition:0.4s;
     border-radius:10px 0 0 10px;
-}
-.project-box:hover{
-    opacity:0.7;
-    transition:1s;
-    transform:scale(1.1);
-}
-.project-box{
-    transition:1s;
+      background:gray;
+      position:relative;
 }
 
-.blogspot,.imgBX ,.blogspot,.project-box ,.imageBox{
-    border-radius: 30px;
-}
+
+
+
+
+
+
+/* about ME */
 .placeBox .content{
     position: absolute;
     top:0;
@@ -230,28 +218,30 @@ margin-bottom:20px;
     margin-top:20;
 }
 
-.blog{
+.project{
     position:relative;
    padding:10px;
     background:white
 }
-.blog h2{
+.project h2{
     color:black;
 }
-.blogspot{
+.projectSpot{
     position:relative;
-    margin-top:10px;
+    margin-top:20px;
     width:100%;
     background:#fff;
- 
 }
-.blogspot .imgBx img{
+.projectSpot .imgBx img{
     width:100%;
     height:100%;
     object-fit: cover;
 }
-.blogspot .content{
+.projectSpot .content{
     padding:15px;
+}
+.project_row{
+    margin:0 auto;
    
 }
 a:link{
@@ -259,7 +249,7 @@ a:link{
     text-decoration: none;
     cursor: pointer;
 }
-.blogspot .content h1{
+.projectSpot .content h1{
     margin:0;
     padding:0;
     font-weight:600;
@@ -316,11 +306,11 @@ a:link{
         border: 2px solid #000;
         color:#fff;
         background:rgb(24, 28, 43);
-        padding:15px 50px;
-        border-radius:50px;
+        padding:10px 30px;
+        border-radius:20px;
         outline:none;
         font-weight:500;
-        margin-top:50px;
+        margin-top:60px;
         float:right;
 }
 .btnD3:hover{
@@ -385,7 +375,7 @@ footer{
     border:2px solid white
 }
 .about-post-body_skills{
-    margin-top:-50px;
+    margin-top:-25px;
 }
 
 .about-header{
@@ -427,10 +417,141 @@ ul li{
 .row{
     margin-top:30px;
 }
+.banner ul li:hover, .banner ul li:hover~li{
+    transform:rotate(180deg) translate(-200px);
+    transition:2s;
+    filter:blur(20px);
+    opacity:0;
+}
 
 .main_title_skills{
     font-weight:0.9rem;
     margin-top:0;
+}
+
+
+.profile_text, .typed{
+    color:rgb(181, 186, 192);
+}
+
+
+.content_box{
+    margin-top:60px;
+}
+
+.profile_picture{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    transition:0.8s;
+   
+    }
+.profile_picture:before{
+    content:'';
+    height:100%;
+    width:100%;
+    background:green;
+    transform:scale(1);
+    transition:0.5s;
+    opacity:0.8;
+}
+.profile_picture:hover{
+    /* transform:scale(1.1); */
+    transition:0.5s;
+    background:gray;
+}
+.profile_sub_text{
+    color:rgb(90, 120, 155)
+}
+.profile_container{
+  margin:0;
+}
+
+
+/* project */
+.project .container{
+    padding-top:20px;
+}
+.project-box-container{
+    margin-top:20px;
+    margin:0 auto;
+}
+.project-box .projectSpot{
+    border:2px solid rgb(241, 242, 255);
+}
+.project-box .content{
+    max-height:120px !important;
+}
+.overlay{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgb(248, 248, 248);
+    position:absolute;
+    opacity:0;
+    z-index:1;
+    transition: .5s ease;
+
+}
+.overlay .overlay_text {
+    text-align:left;
+    padding-left:10px;
+    color:rgb(5, 4, 22);
+ 
+}
+.overlay .overlay_text li{
+   
+    padding-left:20px;
+    font-size:15px;
+}
+.overlay .overlay_text h2{
+    margin-top:5px;
+    font-weight:bold;
+}
+.overlay .overlay_text p{
+    margin-top:20px;
+    font-size:16px;
+}
+
+.project-box{
+    transition:0.5s;
+    width:100%;
+    z-index:2; 
+}
+.project-box:hover .overlay{
+    opacity:1;
+    transition:.5s;
+}
+
+.project-box .overlay{
+   
+    transition:.8s;
+} 
+
+img{
+    max-height:260px !important;
+    height:260px !important;
+    width:510px;
+}
+
+.imageBox:hover {
+   transition:0.5s;
+   opacity:0;
+}
+
+
+/* contact */
+
+.contact_form{
+    height:80%;
+    width:80%;
+    margin:0 auto;
+    margin-top:50px;
+}
+.interest_box
+{
+    margin:0 5px 0 5px;
 }
 
 
@@ -488,70 +609,4 @@ ul li{
     .headerText h2{
         font-size:1.8rem;
     }
-}
-.profile_text, .typed{
-    color:rgb(181, 186, 192);
-}
-
-.profile_box{
-    background:rgb(41, 49, 78);
-    border-radius:40%;
-    height:100%;
-    width:100%;
-    box-sizing:border-box;
-    margin-left:0;
-    margin-bottom:10px;
-}
-.content_box{
-    margin-top:14px;
-}
-
-.profile_picture{
-    height:100%;
-    width:100%;
-    border-radius:45%;
-    transition:0.8s;
-   
-    }
-.profile_picture:before{
-    content:'';
-    height:100%;
-    width:100%;
-    background:green;
-    transform:scale(1);
-    transition:0.5s;
-    opacity:0.8;
-}
-.profile_picture:hover{
-    transform:scale(1.1);
-    transition:0.5s;
-}
-.profile_sub_text{
-    color:rgb(90, 120, 155)
-}
-.profile_container{
-  margin:0;
-}
-.project-box-container{
-    margin:25px;
-    
-}
-.project-box .blogspot{
-    border:2px solid rgb(241, 242, 255);
-}
-@keyframes animate
-{
-    
-        0%{
-            transforms:scale(0.92) rotate(0deg);
-        }
-        100%{
-            transforms:scale(0.92) rotate(360deg);
-        }
-    
-}
-
-.interest_box
-{
-    margin:0 5px 0 5px;
 }
