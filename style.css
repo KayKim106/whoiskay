@@ -78,19 +78,24 @@ p
    height:100%;
    background:url(images/backgrounds.jpg);
    background-size:cover;
+   background-repeat:no-repeat;
    margin-bottom:0;
    background-attachment: fixed;
   
 }
 .banner .contentBox h2{
-    margin-right:795px !important;
+    /* margin-right:795px !important; */
     color:black;
+    text-align:left;
+
+    
    
 }
 .banner .contentBox p {
     margin-right:869px !important;
-    color:white;
-    position: absolute;
+    
+    color:white
+   
 }
 .contentBox{
     margin-top:32px;
@@ -502,7 +507,7 @@ ul li{
 }
 .overlay .overlay_text li{
    
-    padding-left:20px;
+    padding-left:30px;
     font-size:15px;
 }
 .overlay .overlay_text h2{
