@@ -1,407 +1,573 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Who is Kay</title>
-	<meta name="viewpot" content="width=device-width,initial-scale=1.0" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-  <script src="projects/js/typed.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/css/style1.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Who is Kay?</title>
 </head>
-<body data-spy="scroll" data-target='.navbar' data-offset="50">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Kay Kim</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#explorer">WhoIsKay?</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-  </header>
-    <div class="jumbotron jumbotron-fluid height100p banner" id="home">
-      <div class="container h100">
-        <div class="contentBox h100">
-          <div>
-            <h2 data-aos="fade-up" data-aos-offset="200" data-aos-delay="1000">Art of Programming</h1>
-            <p data-aos="fade-up" data-aos-offset="250" data-aos-delay="1400">Welcome to Kay's Portfolio</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="sec1 height100p" id="explorer">
-      <div class="container h100">
-        <div class="row">
-            <div class="offset-sm-2 col-sm-8">
-              <div class="headerText text-center">
-                <h2 data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">ABOUT KAY </h2>
-                
-              </div>
-            </div>
-        </div>
-        <div class="row profile_container" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
-            <div class="offset-sm-1 col-sm-10">
-              <div class="row profile_box_row">
-                  <div class="col-md-4 profile_box">
-                      <img class="profile_picture" src="images/kaykim.jpg" alt="">
-                  </div>
-                  <div class="col-md-8 profile_text">
-                     <h3>My name is Kay Kim. I'm a Developer</h3>
-                     <hr>
-           
-                     <p class="profile_sub_text"style=margin-left:15px>I build commercial web sites with, WordPress,
-                      Laravel <br> Javascripts, React & Redux, HTML3, CSS3 and MySql <br>
-                      Also, develop ERP System with Laravel Back Pack package</p>
-                      <hr>
-
-                      <h3 class="profile_sub_text" style=margin-left:15px>My expertise : <span class="typed"> </span></h3>
-                    </div>
-              </div>
-            </div>
-        </div>
-        <div class="row content_box">
-          <div class="col-sm-4 first-background-about">
-            <div class="placeBox" data-aos="fade-right" data-aos-duration="500" data-aos-delay="700">          
-              <div class="content">
-                <div class="about-header">
-                    <h3><i class="fa fa-mortar-board"></i> Academic</h3>              
-                    <div class="about-post-body">
-                      <ul>
-                        <li class="main_title">                
-                          Rutgers
-                          <ul>
-                            <li class="sub_title">Advance Programming, Full Stack Developer </li>
-                          </ul>
-                        </li>
-                        <li class="main_title">
-                          Laguadia
-                          <ul>
-                            <li class="sub_title">Programming & System</li>
-                          </ul>
-                        </li>
-                        <li class="main_title">
-                          Korea Polytech
-                          <ul>
-                            <li class="sub_title">Information Technowledge</li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 second-background-about">
-            <div class="placeBox" data-aos="fade-up" data-aos-duration="500" data-aos-delay="900">
-            
-              <div class="content">
-                <div class="about-header">
-                    <h3><i class="fa fa-group"></i> Career</h3>
-                
-               <div class="about-post-body">
-             
-                <ul>
-                   <li class="main_title">
-                     Threeon Inc.
-                      <ul>
-                        <li class="sub_title">
-                            Title : Web Developer</li>
-                      </ul>
-                   </li>
-                   <li class="main_title" >
-                    Key Solution Provider
-                     <ul>
-                       <li class="sub_title"> 
-                          Title : System Engineer</li>
-                     </ul>   
-                  </li>
-                  <li class="main_title">
-                      Sky Wireless
-                    <ul>
-                      <li class="sub_title">
-                       Title : IT Specialist
-                      </li>
-                    </ul>
-                  </li>
-                 </ul>
-                </div>
-               </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 third-background-about">
-            <div class="placeBox" data-aos="fade-left" data-aos-duration="500" data-aos-delay="1100">
-          
-              <div class="content">
-                <div class="about-header">
-                    <h3><i class="fa fa-cogs"></i> Skills</h3>
-               
-                <div class="about-post-body_skills">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="main_title_skils">
-                            <li>Javascript</li>
-                            <li>React </li>
-                            <li>Redux</li>
-                            <li>Mysql</li>
-                            <li>Java</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Bootstrap4</li>
-                            <li>JQuery </li>
-                          </ul>
-                    </div>
-                  <div class="col-md-6">
-                      <ul class="main_title_skils">
-                          <li>Git</li>
-                          <li>Express</li>
-                          <li>Laravel</li>
-                          <li>PHP</li>
-                          <li>Ajax</li>
-                          <li>Nodejs</li>
-                          <li>MongoDB</li>
-                          <li>Python </li>
-      
-                        </ul>
-                  </div>
-               </div>
-                </div>
-                </div>     
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <section class="project height100p" id="blog">
-    <div class="container h100">
-      <div  class="row project_row">
-        <div class="offset-sm-2 col-sm-8">
-          <div class="headerText text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-            <h2>PROJECTS</h2>
-          </div>
-        </div>
-          <div class="row project-box-container">
-            <div class="col-sm-6 project-box">
-              <div class="projectSpot" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                <div class="imgBX">
-                  <a href="http://nisiusa.com/" target="_blank">
-                    <img src="projects/nisiTemp.png" class="img-fluid imageBox">
-                    <div class="overlay">
-                      <div class="overlay_text">
-                        <h2>NISI</h2>
-                        <p>NISI is Samsung product service agent that repair and guide customers to Samsung's product efficiently
+<body>
     
-                          <br>In this Project, My role was :
-                            <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1500">UI Design</li>
-                            <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1600">Samsung API Data Communication</li>
-                            <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1700">Ticket Process(Open,Claim,Close)</li>
-                            <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1800">Google Map distance Calculation</li>
-                            <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1900">Report Page With Log Data</li>
-           
-                            <span  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1700">Language : Laravel,PHP,React,Redux,Javascript,HTML5,CSS3,Mysql</span>
-              
-                          </br>
-                      
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="content">
-                  <h1>NISI USA</h1>
-                  <div class="clearfix"></div>  
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 project-box">
-              <div class="projectSpot" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                <div class="imgBX">
-                  <a href="https://www.vatechamerica.com" target="_blank">
-                    <img src="projects/vatechTemp.png" class="img-fluid imageBox">
-                    <div class="overlay">
-                        <div class="overlay_text">
-                          <h2>Vatech</h2>
-                          <p>Vatech America is Dental Machine Company sales it to Europe and US
-      
-                            <br>In this Project, My role was :
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1500">Developing form page (US & Europe)</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1600">Maintaining website functionality</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1700">Managing Company's Media</li>
-                            </br>
-                            <span  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1700">Language : Laravel,PHP,Javascript,HTML5,CSS3,Mysql</span>
-                          </p>
-                        </div>
-                      </div>
-                  </a>
-                </div>
-                <div class="content">
-                  <h1>Vatech America</h1>
-                  <div class="clearfix"></div>  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row project-box-container">
-            <div class="col-sm-6 project-box">
-              <div class="projectSpot" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
-                <div class="imgBX">
-                  <a href="http://beannbean.com/" target="_blank">
-                    <img src="projects/beannbeanTemp.png" class="img-fluid imageBox">
-                    <div class="overlay">
-                        <div class="overlay_text">
-                          <h2>Bean & Bean</h2>
-                          <p>Bean & Bean is a coffee specialty store
-      
-                            <br>In this Project, My role was :
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1500">Installing WordPress theme</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1600">Customizing WordPress functions</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1700">Maintaining website contents</li>
-                            </br>
-                            <span  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1700">Language : Javascript,HTML5,CSS3,WordPress</span>
-                          </p>
-                        </div>
-                      </div>
-                  </a>
-                </div>
-                <div class="content">
-                  <h1>Bean & Bean</h1>
-                  <div class="clearfix"></div>  
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 project-box">
-              <div class="projectSpot" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
-                <div class="imgBX">
-                  <a href="http://www.turboairinc.com" target="_blank">
-                    <img src="projects/texakingTemp.png" class="img-fluid imageBox">
-                    <div class="overlay">
-                        <div class="overlay_text">
-                          <h2>Texaking</h2>
-                          <p>Texaking is a refrigiator production company
-      
-                            <br>In this Project, My role was :
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1500">Developing Data Import Module</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1600">Developing Event Log Module</li>
-                              <li data-aos="fade-left" data-aos-duration="1300" data-aos-delay="1700">Developing Vendor Module</li>
-                            </br>
-                            <span  data-aos="fade-up" data-aos-duration="1300" data-aos-delay="1700">Language :Laravel backpack,PHP,Javascript,HTML5,CSS3,Mysql</span>
-                          </p>
-                        </div>
-                      </div>
-                  </a>
-                </div>
-                <div class="content">
-                  <h1>TexaKing</h1>
-                  <div class="clearfix"></div>  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-    <section class="contact height100p" id="contact">
-      <div class="container ">
-        <div class="row">
-          <div class="col-sm-12">
-              <div class="headerText text-center contact_form">
-                  <h2>CONTACT ME</h2>
-              </div>
-          </div>
-        </div>
-        <div class="row clearfix contact_form">
-          <div class="offset-sm-2 col-sm-8 " >
-              <form action="MAILTO:kaykim106@gmail.com" method="post"   data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-                <div class="form-group">
-                  <label>Name</label>
-                  <input type="text" name="" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label>Email</label>
-                  <input type="email" name="" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <label>Phone</label>
-                  <input type="tel" name="" class="form-control">
-                </div>
-                <div class="form-group">
-                  <label>Message</label>
-                  <textarea name="comment" class="form-control textarea" type="textarea"></textarea>
-                </div>
+    <!--Header-->
+    <header id="home">
+            <!--Navbar-->
+     
+            <!--Main text-->
+        
+            <h3 class="mainText">
+                Welcome to Kay's Profile
+            </h3>
+                <p class="lead">
+                Art of Programming
+                </p>
+                <div class="home-btn">
+                        <a href="#project" id="home-btn-text">See My Work</a>
+                </div>  
 
-                <div class="form-group">
-                <button type="submit" value="send" class="btn btnD3 fa fa-send">  send</button>
+              
+    </header>
+    <div class="navbar navbar-default col-md-12 col-sm-12 col-xs-12">
+        <div class="logo" >
+            <a href="#home">Kay Kim</a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#job-experience">Experience</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="aboutMe" id="about">
+        <div class="about-wrapper">
+            <div class="page-header">
+                <img src="./public/assets/images/icons/icons/png/about_icon.png" alt="logo">
+                <h1 class="header-title">
+                    ABOUT
+            
+                </h1>
+            </div>
+            <div class="col-md-12">
+            
+            <div class="row about-top">
+                <div class="col-sm-12 col-md-5 basic-info">
+                    <div class="profile-image">
+                        <img src="./public/assets/images/about/kay.png" alt="Kay"> 
+                    
+                        <div class="background-box">
+
+                        </div>
+                    </div>
+                  
                 </div>
-              </form>
-          
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="sci">
-              <li><a href="#"><i class="fa fa-twitter" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"></i></a></li>
-              <li><a href="https://github.com/KayKim106" target="_black"><i class="fa fa-github" data-aos="fade-down" data-aos-duration="500" data-aos-delay="200"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/kay-kim-93139ba4/" target="_black"><i class="fa fa-linkedin" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"></i></a></li>
-              <li><a href="https://www.instagram.com/skyjpgo/" target="_black"><i class="fa fa-instagram" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row cpryt-container">
-          <div class="col-sm-12">
-              <p class="cpryt">
-                  @ copyright 2019 by Kay Kim
-              </p>
-          </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script> type="text/javascript">
-    $(document).scroll(function(){
-      $('.navbar').toggleClass('scrolled',$(this).scrollTop() > $('.navbar').height());
-    })
-      </script>
-      <script>
-          setTimeout(fade_out,5000);
-          function fade_out(){
-            $("#mydiv").fadeOut().empty();
-            }
-          
-        </script>
-       
-      
+                <div class="col-sm-12 col-md-5 basic-info">
+                    <h4 class="info-header">
+                        My name is Kay Kim. I'm a Developer
+                    </h4>
+                    <hr class="divider">
+                    <p>I build commercial web sites with WordPress, Laravel, <br> 
+                        javascripts, React & Redux, HTML5, CSS3 and Mysql. <br>
+                        Also, develop ERP system with Laravel back pack.
+                    </p>
+                    <div class="about-keyWords" data-aos="fade-left" data-aos-duration="550" data-aos-delay="250">
+                        <div>
+                            <img src="./public/assets/images/icons/icons/png/simple_icon.png" alt="1">   
+                            <h5>Simple</h5>                
+                        </div>
+                        <div>
+                            <img src="./public/assets/images/icons/icons/png/responsive_icon.png" alt="2">
+                            <h5>Responsive</h5>
+                        </div>
+                        <div>
+                            <img src="./public/assets/images/icons/icons/png/dynamic_icon.png" alt="3">
+                            <h5>Dynamic</h5>
+                        </div> 
+                    </div>
+                    <div class="resume-link">
+                        <i class="fa fa-download">
+                        
+                        </i>
+                        <a href="./public/assets/resume/KayKim Resume.pdf" target="_black" download>Download My Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row about-bottom">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 col-sm-12 skill-tab1">
+                    <ul>
+                        <li>Javascript
+                            <div class="bar-wrapper" >
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round" style="width:75%">
+                                        <div class="bar-end">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>React 
+                            <div class="bar-wrapper" >
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round" style="width:70%">
+                                        <div class="bar-end">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>  
+                        <li>Redux
+                            <div class="bar-wrapper" >
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round" style="width:70%">
+                                        <div class="bar-end">70%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> 
+                        <li>PHP
+                            <div class="bar-wrapper" >
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round" style="width:75%">
+                                        <div class="bar-end">75%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-12 skill-tab2">
+                        <ul>
+                            <li>Java
+                                <div class="bar-wrapper" >
+                                    <div class="w3-light-grey w3-round">
+                                        <div class="w3-container w3-round" style="width:70%">
+                                            <div class="bar-end">70%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Jquery
+                                <div class="bar-wrapper" >
+                                    <div class="w3-light-grey w3-round">
+                                        <div class="w3-container w3-round" style="width:80%">
+                                            <div class="bar-end">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>  
+                            <li>Bootstrap4
+                                <div class="bar-wrapper" >
+                                    <div class="w3-light-grey w3-round">
+                                        <div class="w3-container w3-round" style="width:80%">
+                                            <div class="bar-end">80%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>HTML5
+                                <div class="bar-wrapper" >
+                                    <div class="w3-light-grey w3-round">
+                                        <div class="w3-container w3-round" style="width:85%">
+                                            <div class="bar-end">85%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2" ></div>
+                </div>
+                   
+            </div>
+            </div>
+        
+        </section>
+    <!--About me end-->
+
+    <!-- Job Experience -->
+    <section class="job-experience" id=job-experience>
+            <div class="experience-wrapper col-md-12">
+                <div class="page-header">
+                      
+                        <h1 class="header-title">
+                            JOB EXPERIENCE
+                        </h1>
+                </div>
+                <div class="row experience-wrapper">
+                    <div class="col-md-12 experience-contents-row">
+                        <div class="row experience-contents">
+                            <div class="col-md-4 main-content-box-left"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="1005">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-11 company-left">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12">
+                                                <h3>Threeon Inc</h3>
+                                                <p>Web Developer</p> 
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-11 col-md-12 company-info-text">
+                                                <p>Developing Enterprise resource planning and WareHourse Management System<br/> for distribution companies. Createing dynamic and E-commerse website for small business</p> 
+                                            </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 ">
+                                <div class="row connection-bar">
+                                    <div class="col-md-12 middle-bar-connection-left">
+                                    </div>
+                                    <div class="circle-ball"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                    <div class="middle-bar"></div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="row">
+                                    <div class="col-md-12  time-line">
+                                        <h6> 2018.04 - Present</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 main-content-box-none"></div>
+                        </div>
+                        <div class="row experience-contents">
+                                <div class="col-md-4 main-content-box-none"></div>
+                                <div class="col-md-1">
+                                        <div class="row">
+                                            <div class="col-md-12 time-line">
+                                                <h6> 2016.05 - 2018.4</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col-md-1 main-content-middle-bar">
+                                    <div class="middle-bar"> 
+
+                                    </div>     
+                                    <div class="circle-ball-right"></div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="row">
+                                        <div class="col-md-12 middle-bar-connection-right">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 main-content-box-right"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-11 company-right" >
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h3>Key Solution Provider</h3>
+                                                    <p>System Engineer</p> 
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 company-info-text">
+                                                    <p>Built a Network environment for small business, computer troubleshooting, installing <br/>Server system server, Mac and window user support. Managed small businesses web sites</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        <div class="row experience-contents">
+                                <div class="col-md-4 main-content-box-left"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="100">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-11 company-left">
+                                            <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h3>Sky Wireless</h3>
+                                                        <p>IT Specialist</p> 
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 company-info-text">
+                                                        <p>Repair computers and mobile devices, installing security system for small business</p>
+                                                    </div>
+                                                </div>
+             
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="row">
+                                        <div class="col-md-12 middle-bar-connection-left">
+                                            
+                                        </div>
+                                        <div class="circle-ball"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 ">
+                                    <div class="middle-bar">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                        <div class="row">
+                                            <div class="col-md-12 time-line">
+                                                <h6> 2012.05 - 2014.06</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                            <div class="col-md-4 main-content-box-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!--Project-->
+    <section id="project" class="row">
+            <div class="col-md-12 project-wrapper" >
+                <div class=" row">
+                    <div class="page-header col-md-12">
+                        <span>
+                            <img src="./public/assets/images/icons/icons/png/project_icon.png" alt="icon">
+                            <h1>PROJECT</h1>
+                        </span>
+                    </div>
+                </div>
+              
+                <div class="row project-body">
+                    <div class="col-md-10 project-container">
+                        <div class="row project-content">
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 project-box-top nisi" id="project-box " data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
+                                <img src="./public/assets/images/projects/nisiTemp.png" alt="nisi" class="nisi" >
+                                <div class="overlay">
+                                    <div class="project-detail">
+                                        <h6>NISI USA</h6>
+                                       
+                                            <a href="http://nisi-tms.threeon.io" target="_blank" id="home-btn-text">
+                                                <div class="project-btn">See My Work</div>
+                                            </a>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 project-box-bottom vatech"  id="project-box vatech" data-aos="fade-down" data-aos-duration="550" data-aos-delay="200" >
+                                <img src="./public/assets/images/projects/vatechTemp.png" alt="vatech">
+                                <div class="overlay">
+                                    <div class="project-detail">
+                                        <h6>VATECH</h6>
+                                            <a href="http://www.vatechamerica.com" target="_blank" id="home-btn-text"> 
+                                                <div class="project-btn">See My Work</div>
+                                            </a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row project-content">
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 project-box-top texaking"  id="project-box" data-aos="fade-up" data-aos-duration="550" data-aos-delay="200" >
+                                <img src="./public/assets/images/projects/texakingTemp.png" alt="texaking">
+                                <div class="overlay">
+                                    <div class="project-detail">
+                                        <h6>TEXAKING</h6>
+                                       
+                                            <a href="http://qa.texakingerp.com" target="_blank" id="home-btn-text"> <div class="project-btn">See My Work</div>
+                                            </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 project-box-bottom bean"   id="project-box" data-aos="fade-left" data-aos-duration="550" data-aos-delay="200">
+                                <img src="./public/assets/images/projects/beannbeanTemp.png" alt="beannbean">
+                                <div class="overlay">
+                                    <div class="project-detail">
+                                        <h6>Bean & Bean</h6>
+                           
+                                            <a href="https://beannbean.com/" target="_blank" id="home-btn-text">
+                                               <div class="project-btn">See My Work</div>
+                                            </a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--contact me-->
+    
+
+    <section  class="contact" id="contact">
+            <div class="col-md-12 contact-wrapper">
+                <div class="row">
+                        <div class="page-header col-md-12">
+                            <span>
+                                <img src="./public/assets/images/icons/icons/png/contact_icon.png" alt="icon">
+                                <br>
+                                <h1>CONTACT</h1>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row contact-body">
+                        <div class="col-md-7 contact-form-wrapper">
+                            <div class="row contact-container">
+                                <div class="col-md-2 col-lg-4"></div>
+                                <div class="col-sm-11 col-xs-11 col-md-8 col-lg-6 email-form" style="background:white;">
+                                    <div class="row email-form-container">
+                        
+                                        <div class="col-md-11 email-container">
+                                            <ul>
+                                                    
+                                                <!-- <form action="MAILTO:kaykim106@gmail.com" method="post">
+                                                        <div class="form-group">
+                                                                <label>Name</label>
+                                                                <input type="text" name="" class="form-control" required>
+                                                              </div> -->
+                                                    <!-- <input type="text" placeholder="Name" id="form-input" class="form-group-input" required>
+                                                    <input type="tel" placeholder="Phone" id="form-input" class="form-name-input" >
+                                                    <input type="email" placeholder="Email" id="form-input" class="form-name-input" require>
+                                                    <input type="comment" placeholder="Message" id="form-input" class="form-name-input"> -->
+                                                 
+                                                <!-- </form>
+                                           
+                                               <div  class="row">
+                                                  </div> -->
+                                            </ul>
+                                            <form action="MAILTO:kaykim106@gmail.com" method="post"   data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                                                    <div class="form-group">
+                                                      <label>Name</label>
+                                                      <input type="text" name="name" class="form-control" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label>Email</label>
+                                                      <input type="email" name="mail" class="form-control" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label>Phone</label>
+                                                      <input type="tel" name="tel" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label>Message</label>
+                                                      <textarea name="comment" class="form-control textarea" type="textarea"></textarea>
+                                                    </div>
+                                    
+                                                    <div class="form-group">
+                                                        <button type="submit" value="Send" class="btn btn-primary email-submit"><i class="fa fa-send"></i> Send</button>
+                                                    </div>
+                                                  </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 personal-info-container">
+                            <div class="row personal-info">
+                                   
+                                    <div class="col-md-8 info-detail">
+                            
+                                        <div class="row info-row">
+                                            <h5>
+                                                <span class="contact-name">
+                                                    <h4>Kay Kim</h4>
+                                                </span>
+                                            </h5>
+                                        </div>
+                                        <div class="row info-row">
+                                            <div class="col-md-12">
+                                                <div class="email-info">
+                                                    <div class="row">
+                                                        <span>Email Me</span>
+                                                    </div>
+                                                    <div class="row detail-info">
+                                                        <span>
+                                                            <h5>Email : KayKim106@gmail.com</h5>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row info-row">
+                                            <div class="col-md-12">
+                                                <div class="call-Me">
+                                                    <div class="row">
+                                                        <span>Contact Me</span>
+                                                    </div>
+                                                    <div class="row detail-info">
+                                                        <span>
+                                                            <h5>Phone : (929)-282-5837</h5>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row info-row">
+                                            <div class="col-md-12 sns-list-wrapper">
+                                                <div class="sns-list">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="https://github.com/KayKim106" target="_blank">
+                                                                <i class="fa fa-github" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.instagram.com/skyjpgo/">
+                                                                <i class="fa fa-instagram" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.linkedin.com/in/kay-kim106/" target="_black">
+                                                                <i class="fa fa-linkedin" data-aos="fade-down" data-aos-duration="650" data-aos-delay="300"></i>
+                                                            </a>
+                                                        </li>
+                                    
+                                                
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row copy-right-wrapper">
+                <div class="col-md-12 col-sm-12">
+                    <p class="cpryt">@ COPYRIGHT 2019 BY KAY KIM</p>
+                </div>    
+            </div>
+        </footer>
 </body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="projects/js/typed.js"></script>
+
+
+<script>
+  AOS.init();
+</script>
+<script> type="text/javascript">
+
+    $(window).scroll(function(){
+        $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 800);
+    });
+  </script>
+  <script>
+      setTimeout(fade_out,5000);
+      function fade_out(){
+        $("#mydiv").fadeOut().empty();
+        }
+      
+    </script>
 </html>
