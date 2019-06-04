@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
   }
   body{
-
     height:100%;
     padding:0;
     margin:0;
@@ -24,7 +23,8 @@ header{
     height:100px;
     background: #293547;
     top:0;
-    z-index:999;
+    z-index:9999;
+   
 }
 
 .navbar-default{
@@ -32,15 +32,16 @@ header{
     background:transparent;
   }
   .navbar-default.scrolled{
-    background:#293547;
+    background: #293547;
+    transform: scaleY(0.8);
+    position: fixed;
+    top: -10px;
   }
-
 
 .logo{
     /* float:left; */
     position: absolute;
     top:0;
-
     margin-left:100px;
     border:1px solid transparent;
     border-radius:50%;
@@ -139,7 +140,9 @@ width:60%;
 position: relative;
 left:-141px;
 }
-
+.header-title{
+    margin-top:5px;
+}
 
 
  /* About Me section */
@@ -225,7 +228,7 @@ li div{
 .about-keyWords div{
     flex-direction: column;
     text-align: center;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 50px 20px 50px;
 
 }
 .about-keyWords img{
@@ -380,6 +383,10 @@ li div{
 /* Project section */
 #project{
     background:white;
+}
+.project-content img, .project-content .overlay{
+    min-width:400px;
+    max-width:500px;
 }
 .project-content, .project-container, #project-box{
     margin:0 auto;
@@ -597,73 +604,8 @@ input:focus{
     color:white;
     transition:0.2s ease;
 }
-
-
 @media only screen and (max-width: 375px){
     .middle-bar, .main-content-box-none, .time-line, .col-md-1{
-        display: none;
-    }
-    .experience-wrapper{
-        padding:0;
-   
-    }
-   
-    .experience-contents {
-      
-        height: 160px;
-        width: 350px;
-        margin: 0 auto;
-    }
-    nav, navbar{
-        display:none;
-    }
-    .basic-info h4{
-        font-size:20px;
-    }
-    .aboutMe{
-        height:1500px;
-    }
-    .about-bottom{
-        margin-top:300px;
-    }
-    .resume-link{
-        text-align:center;
-    }
-    .project-box-top, .project-box-bottom{
-     margin-right:0 !important;
-     margin-left:0 !important;
-  
-     width:90%;
-    }
-  
-    footer{
-        display:none;
-    }
-    .row span, .sns-list, .detail-info, .info-row h5{
-        text-align:center;
-        justify-content: center;
-        margin:0 auto;
-    }
-    .info-detail{
-        line-height: 100px;
-    }
-}
-@media only screen and (max-width: 414px){
-    .info-detail{
-        line-height: 100px;
-    }
-    nav{
-        display:none;
-    }
-    .navbar{
-        display:none;
-    }
-    .project-box-top, .project-box-bottom{
-        margin-right:0 !important;
-        margin-left:0 !important;
-        width:90%;
-       }
-       .background-box ,.middle-bar, .main-content-box-none, .time-line, .col-md-1{
         display: none;
     }
     .experience-wrapper{
@@ -671,51 +613,24 @@ input:focus{
     }
     .experience-contents {
         height: 200px;
-        width: 370px;
+        width: 350px;
         margin: 0 auto;
-        text-align:center;
-    }
-    .company-left,  .company-right{
-        text-align:center;
     }
 
-    .profile-image{
-        justify-content: center;
-        text-align: center;
-    }
-    .basic-info h4{
-        font-size:20px;
-    }
- 
-    .aboutMe{
-        height:1500px;
-    }
-    .about-bottom{
-        margin-top:300px;
-    }
-    .resume-link{
-        text-align:center;
-    }
-    footer{
-        display:none;   
-    }
-    .project-btn{
-        display:none;
-    }
-    .project-container{
-        padding:0;
-        margin:0 auto;
-        text-align:center;
-        justify-content: center;
-    }
-    .project-wrapper{
-        padding-right:0;
-    }
-    .project-content{
-        width:95%;
-        
-    }
+    
+
 }
+
+
+@media only screen and (max-width: 414px){
+
+
+  .profile-image{
+      height:10px;
+  }
+
+}
+
 
 
 @media only screen and (max-width: 768px){
@@ -756,13 +671,6 @@ input:focus{
         top: 0;
         right:132px 
     }
-    .row span, .sns-list, .detail-info, .info-row h5{
-        text-align:center;
-        justify-content: center;
-        margin:0 auto;
-    }
-    
-    
     
 
 }
