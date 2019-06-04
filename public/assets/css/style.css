@@ -228,8 +228,7 @@ li div{
 .about-keyWords div{
     flex-direction: column;
     text-align: center;
-    margin: 20px 50px 20px 50px;
-
+    margin: 20px 8% 20px 8%;
 }
 .about-keyWords img{
     width:50px;
@@ -692,6 +691,9 @@ input:focus{
     }
     .logo{
         display:none;
+    }
+    .about-keyWords div{
+        margin: 20px 5% 20px 5%;
     }
 
 
