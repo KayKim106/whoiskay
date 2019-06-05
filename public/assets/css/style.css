@@ -318,7 +318,7 @@ li div{
 }
 .company-info-text{
     height:80px;
-    overflow:hidden;
+    overflow:scroll;
 }
 .company-info-text p{
     /* white-space: nowrap;  */
@@ -893,7 +893,7 @@ input:focus{
     }
     .company-info-text{
         height:80px;
-        overflow:hidden;
+        overflow:scroll;
     }
     .home-btn{
         width:150px;
