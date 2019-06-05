@@ -913,7 +913,9 @@ input:focus{
     nav{
         position: absolute;
         top: 0;
-        left:15%;
+        
+        width:100%;
+        text-align:center;
     }
     .logo{
         display:none;
