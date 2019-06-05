@@ -163,9 +163,11 @@ left:-141px;
 }
 .basic-info{
     margin:0 auto;
+    max-height:370px;
 }
 .profile-image{
     text-align:right;
+    max-height:350px;
 }
 .introWrapper{
     width:80%;
@@ -186,6 +188,9 @@ li div{
 
 .about-top, .about-bottom{
     height:350px;
+}
+.about-bottom{
+    margin-top:20px;
 }
 .page-header{
     height:150px;
@@ -760,6 +765,9 @@ input:focus{
     .email-form{
         min-width:410px;
     }
+    .resume-link{
+        text-align: center;
+    }
 
 }
 
@@ -882,6 +890,10 @@ input:focus{
         min-width:410px;
         margin:0 auto;
     }
+    .resume-link{
+        text-align: center;
+    }
+
 
 }
 @media only screen and (max-width: 1024px){
