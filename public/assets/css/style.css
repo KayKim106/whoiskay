@@ -816,6 +816,9 @@ input:focus{
    .info-detail{
       display:none;
     }
+    .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
+        display: none;
+    }
 
 }
 @media only screen and (max-width: 1024px){
