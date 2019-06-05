@@ -190,7 +190,7 @@ li div{
     height:350px;
 }
 .about-bottom{
-    margin-top:20px;
+    margin-top:50px;
 }
 .page-header{
     height:150px;
@@ -913,7 +913,7 @@ input:focus{
     nav{
         position: absolute;
         top: 0;
-        
+
         width:100%;
         text-align:center;
     }
@@ -927,7 +927,7 @@ input:focus{
         justify-content: center;
     }
     .about-bottom{
-        margin-top:50px;
+        margin-top:90px;
     }
     .introWrapper{
         margin:0 auto;
