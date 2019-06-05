@@ -23,34 +23,34 @@ header{
     height:100px;
     background: #293547;
     top:0;
-    z-index:9999;
-   
+    z-index:9999;  
 }
 
 .navbar-default{
     transition:500ms ease;
     background:transparent;
-  }
-  .navbar-default.scrolled{
+}
+
+.navbar-default.scrolled{
     background: #293547;
-    transform: scaleY(0.8);
+    transform: scaleY(0.9);
     position: fixed;
-    top: -10px;
-  }
+    top: -5px;
+}
 
 .logo{
     /* float:left; */
     position: absolute;
-    top:0;
+    top:5px;
     margin-left:100px;
     border:1px solid transparent;
     border-radius:50%;
     padding-right:5px;
     padding-left:5px;
     color:white;
-    width:100px;
-    height:100px;
-    line-height:100px;
+    width:90px;
+    height:90px;
+    line-height:90px;
     text-align:center;
     font-weight:bold;
     font-size:20px;
@@ -69,7 +69,7 @@ header{
     color:white;
     font-weight:bold;
     font-size:20px;
-    line-height:100px;
+    line-height:90px;
 }
 .logo a:hover{
     text-decoration: none;
@@ -166,6 +166,9 @@ left:-141px;
 }
 .profile-image{
     text-align:right;
+}
+.introWrapper{
+    width:80%;
 }
 
 .skill-tab1, .skill-tab2 {
@@ -313,11 +316,14 @@ li div{
     text-align:right;
     margin-top:20px;
 }
+.company-info-text{
+    height:80px;
+    overflow:hidden;
+}
 .company-info-text p{
-   
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    /* white-space: nowrap;  */
+    text-overflow: hidden;
+    /* text-overflow: ellipsis;  */
 }
 
 .experience-wrapper{
@@ -376,6 +382,7 @@ li div{
     width:100%;
     top:45%;
     font-size:10%;
+    min-width:130px;
 }
 
 
@@ -384,7 +391,7 @@ li div{
     background:white;
 }
 .project-content img, .project-content .overlay{
-    min-width:400px;
+    min-width:500px;
     max-width:500px;
 }
 .project-content, .project-container, #project-box{
@@ -392,17 +399,20 @@ li div{
 }
 
 .project-box-top{
-    margin-right:30px !important;
+    /* margin-right:30px !important; */
     margin-bottom:30px;
     height:300px;
     padding-right:0;
     padding-left:0;
+    position:relative;
+
 }
 .project-box-bottom{
     margin-left:0 !important;
     height:300px;
     padding-right:0;
     padding-left:0;
+    position:relative;
 }
 .project-body{
     margin-bottom:100px;
@@ -413,17 +423,20 @@ li div{
 }
 .project-content{
     justify-content: center;
+    margin-top:30px;
+}
+.project-content img{
+    margin-right:25px;
+    margin-left:25px;
 }
 
 .project-content img:hover{
     opacity:0.8;
 }
 
-
-
 .overlay{
     top:0;
-    left:0;
+    left:25px;
     right:0;
     bottom:0;
     background:#293547;
@@ -432,15 +445,15 @@ li div{
     z-index:1;
     transition: .5s ease;
 }
-
 .nisi:hover .overlay{
     opacity:1;
     transition:.5s;
-}
-.vatech:hover .overlay{
+} 
+ .vatech:hover .overlay{
     opacity:1;
     transition:.5s;
 }
+
 .texaking:hover .overlay{
     opacity:1;
     transition:.5s;
@@ -448,11 +461,12 @@ li div{
 .bean:hover .overlay{
     opacity:1;
     transition:.5s;
-}
+} 
 .project-detail{
     text-align: center;
     position: relative;
     top: 30%;
+    z-index:2;
 }
 .project-detail h6{
     color:white;
@@ -499,6 +513,7 @@ li div{
     height:600px;
     margin-top:50px;
     border-radius:10px;
+    min-width:430px;
     }
     .contact-info{
         height:600px;
@@ -570,6 +585,7 @@ input:focus{
 
 .detail-info{
     margin-top:10px;
+    min-width:214px;
 }
 
 /* icon hover */
@@ -585,7 +601,9 @@ input:focus{
 .sns-list ul{
     padding-left:0;
 }
-
+.sns-list-wrapper{
+    min-width:252px;
+}
 
 /* Footer */
 .copy-right-wrapper{
@@ -603,8 +621,50 @@ input:focus{
     color:white;
     transition:0.2s ease;
 }
+
+/* IPhone X */
 @media only screen and (max-width: 375px){
-    .middle-bar, .main-content-box-none, .time-line, .col-md-1{
+
+    section{
+        padding-top:20px;
+    }
+    .header-title{
+        font-size:2rem;
+    }
+    .info-header{
+        font-size:32px !important;
+    }
+    .about-bottom{
+        margin-top:100px !important;
+    }
+    .resume-link{
+        text-align:center;
+    }
+
+    .skill-tab1 li, .skill-tab2 li {
+        list-style: none;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+    .company-left{
+        text-align:left;
+    }
+    .company-left h3, .company-right h3{
+        font-size:20px;
+    }
+    .company-info-text p{
+        font-size:13px;
+    }
+
+    .project-content img, .project-content .overlay {
+        min-width: 350px;
+        max-width: 350px;
+        margin-left:0;
+       
+    }
+
+    .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
         display: none;
     }
     .experience-wrapper{
@@ -615,18 +675,91 @@ input:focus{
         width: 350px;
         margin: 0 auto;
     }
+    .project-content img{
+        margin-right:0px;
+    }
+   
+    .email-form{
+        min-width:100%;
+        border-radius:5px;
+    }
+    .overlay{
+        left:0;
+    }
+    .project-btn, .info-detail{
+      display:none;
+    }
+    .email-form{
+        min-width:375px !important;
+    }
 
     
-
 }
 
 
 @media only screen and (max-width: 414px){
+    section{
+        padding-top:20px;
+    }
+    .header-title{
+        font-size:2rem;
+    }
+    .info-header{
+        font-size:32px !important;
+    }
+    .about-bottom{
+        margin-top:100px !important;
+    }
+    .resume-link{
+        text-align:center;
+    }
 
+    .skill-tab1 li, .skill-tab2 li {
+        list-style: none;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
 
-  .profile-image{
-      height:10px;
-  }
+    .company-left{
+        text-align:left;
+    }
+    .company-left h3, .company-right h3{
+        font-size:20px;
+    }
+    .company-info-text p{
+        font-size:13px;
+    }
+
+    .project-content img, .project-content .overlay {
+        min-width: 350px;
+        max-width: 350px;
+        margin-left:0;
+       
+    }
+
+    .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
+        display: none;
+    }
+    .experience-wrapper{
+        padding:0;
+    }
+    .experience-contents {
+        height: 200px;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .project-content img{
+        margin-right:0px;
+    }
+    .overlay{
+        left:0;
+    }
+    .info-detail{
+      display:none;
+    }
+    .email-form{
+        min-width:410px;
+    }
 
 }
 
@@ -670,7 +803,19 @@ input:focus{
         top: 0;
         right:132px 
     }
-    
+    .project-content img{
+        margin-right:0px;
+    }
+  
+    .contact-body .col-md-7{
+        margin:0 auto;
+    }
+    .overlay{
+        left:0;
+    }
+   .info-detail{
+      display:none;
+    }
 
 }
 @media only screen and (max-width: 1024px){
@@ -680,14 +825,17 @@ input:focus{
     hr{
         display:none;
     }
+    .company-info-text{
+        height:80px;
+        overflow:hidden;
+    }
     .home-btn{
         width:150px;
     }
     nav{
         position: absolute;
         top: 0;
-        right:120px; 
-     
+        left:15%;
     }
     .logo{
         display:none;
@@ -695,6 +843,23 @@ input:focus{
     .about-keyWords div{
         margin: 20px 5% 20px 5%;
     }
-
-
+    .about-keyWords{
+        justify-content: center;
+    }
+    .about-bottom{
+        margin-top:50px;
+    }
+    .introWrapper{
+        margin:0 auto;
+        text-align:center;
+    }
+    .info-header{
+       text-align:center;
+    }
+    h4{
+        font-size:1.4rem !important;
+     }
+     .project-content img{
+        margin-right:0px;
+    }
 }
