@@ -819,6 +819,69 @@ input:focus{
     .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
         display: none;
     }
+    section{
+        padding-top:20px;
+    }
+    .header-title{
+        font-size:2rem;
+    }
+    .info-header{
+        font-size:32px !important;
+    }
+    .about-bottom{
+        margin-top:100px !important;
+    }
+    .resume-link{
+        text-align:center;
+    }
+
+    .skill-tab1 li, .skill-tab2 li {
+        list-style: none;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+    .company-left{
+        text-align:left;
+    }
+    .company-left h3, .company-right h3{
+        font-size:20px;
+    }
+    .company-info-text p{
+        font-size:13px;
+    }
+
+    .project-content img, .project-content .overlay {
+        min-width: 350px;
+        max-width: 350px;
+        margin-left:0;
+       
+    }
+
+    .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
+        display: none;
+    }
+    .experience-wrapper{
+        padding:0;
+    }
+    .experience-contents {
+        height: 200px;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .project-content img{
+        margin-right:0px;
+    }
+    .overlay{
+        left:0;
+    }
+    .info-detail{
+      display:none;
+    }
+    .email-form{
+        min-width:410px;
+        margin:0 auto;
+    }
 
 }
 @media only screen and (max-width: 1024px){
