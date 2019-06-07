@@ -503,7 +503,9 @@ li div{
 }
 .project-btn:hover a{
     font-weight:bold;
-
+}
+.project-btn:hover{
+    cursor: pointer;
 }
 
 
@@ -631,6 +633,13 @@ input:focus{
     color:white;
     transition:0.2s ease;
 }
+/* Modal */
+.w3-content img{
+    height:350px !important;
+    min-width:450px;
+    max-width:450px;
+}
+
 
 /* IPhone X */
 @media only screen and (max-width: 375px){
@@ -898,9 +907,9 @@ input:focus{
     .resume-link{
         text-align: center;
     }
-
-
 }
+
+
 @media only screen and (max-width: 1024px){
     .middle-bar-connection-left, .middle-bar-connection-right{
         display:none;

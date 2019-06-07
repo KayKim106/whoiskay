@@ -394,7 +394,46 @@
                                         <h6>Bean & Bean</h6>
                                         <a href="https://beannbean.com/" target="_blank" id="home-btn-text">
                                             <div class="project-btn">See My Work</div>
-                                            </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row project-content">
+                         
+                            <div class="project-box-bottom bean"  id="project-box " data-aos="fade-down" data-aos-duration="550" data-aos-delay="200" >
+                                <img src="./public/assets/images/projects/wikimain.PNG" alt="beannbean">
+                                <div class="overlay">
+                                    <div class="project-detail">
+                                        <h6>Wikipedia</h6>
+                                            <div class="project-btn" data-toggle="modal" data-target="#exampleModalCenter">Personal Project</div>
+                                    </div>
+                                </div>
+
+                                <!--Modal-->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Wikipedia Search Web by React library</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body"> 
+                                            <div class="w3-content" style="max-width:800px;position:relative">
+                                                <img class="mySlides" src="./public/assets/images/projects/wikimain.PNG" style="width:100%">
+                                                <img class="mySlides" src="./public/assets/images/projects/wikiList.PNG" style="width:100%">
+                                                <img class="mySlides" src="./public/assets/images/projects/wikiContent.PNG" style="width:100%">
+                                                <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"> ❮ </a>
+                                                <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)"> ❯ </a>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <a type="button" target="_black" href="https://github.com/KayKim106/wikipediacopy" class="btn btn-primary">GitHub Link</a>
+                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -404,6 +443,8 @@
             </div>
         </section>
 
+
+      
         <!--contact me-->
 
 
@@ -556,5 +597,25 @@
       function fade_out(){
         }
       
+    </script>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
     </script>
 </html>
