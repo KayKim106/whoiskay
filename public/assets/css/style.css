@@ -664,7 +664,17 @@ input:focus{
     width:550px;
 }
 @media only screen and (max-width: 320px){
+
+    .mainText{
+        font-size:20px;
+    }
+    .info-header{
+        font-size:30px !important;
+    }
   
+    .about-keyWords{
+
+    }
 
     .experience-contents{
         width:290px !important
@@ -675,8 +685,13 @@ input:focus{
     .info-detail
     {
         display:inline-block !important;
-    
 
+    }
+    .project-content img, .project-content .overlay {
+        min-width: 300px !important;
+        max-width: 300px !important;
+        margin-left:0;
+       
     }
 }
 /* IPhone X */
@@ -743,14 +758,35 @@ input:focus{
     .overlay{
         left:0;
     }
-    .project-btn, .info-detail{
+    .project-btn{
       display:none;
     }
     .email-form{
         min-width:375px !important;
     }
+    .introWrapper p{
+        max-height:190px;
+        overflow:scroll;
+    }
+    .info-header{
+        max-height:75px;
+        overflow:hidden;
+    }
+    .about-keyWords div{
+       
+        width:70px;
+    }
+    .about-keyWords  h5{
+        font-size:15px;
+    }
+    .project-box-top{
+        height:200px;
+    }
+ 
+    .info-detail{
+        min-width:auto;
+    }
 
-    
 }
 
 
@@ -765,7 +801,7 @@ input:focus{
         font-size:32px !important;
     }
     .about-bottom{
-        margin-top:100px !important;
+        margin-top:100px;
     }
     .resume-link{
         text-align:center;
@@ -811,9 +847,7 @@ input:focus{
     .overlay{
         left:0;
     }
-    .info-detail{
-      display:none;
-    }
+  
     .email-form{
         min-width:410px;
     }
@@ -821,6 +855,9 @@ input:focus{
         text-align: center;
     }
 
+    .info-detail{
+        min-width:auto;
+    }
 }
 
 
@@ -839,6 +876,9 @@ input:focus{
     }
     .detail-info h5{
         font-size:15px;
+    }
+    .detail-info{
+        justify-content: center;
     }
     .sns-list li a:hover{
         color:white;
@@ -873,8 +913,12 @@ input:focus{
     .overlay{
         left:0;
     }
+   
+    .contact-form-wrapper{
+        display:none;
+    }
    .info-detail{
-      display:none;
+      /* display:none; */
     }
     .middle-bar, .main-content-box-none, .time-line, .col-md-1, .background-box, .profile-image, .navbar{
         display: none;
@@ -889,7 +933,7 @@ input:focus{
         font-size:32px !important;
     }
     .about-bottom{
-        margin-top:100px !important;
+        /* margin-top:100px !important; */
     }
     .resume-link{
         text-align:center;
@@ -935,15 +979,16 @@ input:focus{
     .overlay{
         left:0;
     }
-    .info-detail{
-      display:none;
-    }
     .email-form{
         min-width:410px;
         margin:0 auto;
     }
     .resume-link{
         text-align: center;
+    }
+    .info-detail{
+        text-align:center;
+        justify-content: center;
     }
 }
 
