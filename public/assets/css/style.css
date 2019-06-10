@@ -415,10 +415,17 @@ li div{
     padding-right:0;
     padding-left:0;
     position:relative;
-
 }
 .project-box-bottom{
     margin-left:0 !important;
+    height:300px;
+    padding-right:0;
+    padding-left:0;
+    position:relative;
+}
+.project-box-last{
+    /* margin-right:30px !important; */
+    margin-top:30px;
     height:300px;
     padding-right:0;
     padding-left:0;
@@ -482,7 +489,13 @@ li div{
     color:white;
     font-weight:400;
     font-size:25px;
-    margin-bottom:50px;
+    margin-bottom:30px;
+}
+.project-detail p{
+    margin-bottom:45px;
+}
+.myslides ul{
+    width:490px;
 }
 
 .project-btn{
@@ -635,12 +648,37 @@ input:focus{
 }
 /* Modal */
 .w3-content img{
-    height:350px !important;
-    min-width:450px;
-    max-width:450px;
+    height:330px !important;
+    min-width:500px;
+    max-width:500px;
 }
+.w3-content{
 
+    top:80px;
+}
+.modal-content{
+    height:650px;
+    width:552px;
+}
+.modal-body{
+    width:550px;
+}
+@media only screen and (max-width: 320px){
+  
 
+    .experience-contents{
+        width:290px !important
+    }
+    .email-form{
+        display:none;
+    }
+    .info-detail
+    {
+        display:inline-block !important;
+    
+
+    }
+}
 /* IPhone X */
 @media only screen and (max-width: 375px){
 
