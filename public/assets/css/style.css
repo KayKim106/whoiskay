@@ -1079,3 +1079,10 @@ input:focus{
      margin:0 auto;
     }
 }
+
+@media only screen and (max-width: 880px) {
+
+.time-dot{
+    display:none;
+}
+}
