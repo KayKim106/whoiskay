@@ -318,17 +318,23 @@ li div{
     margin-right:0;
 }
 
-.company-right{
+.company-right, .company-left{
     text-align:left;
-    margin-top:20px;
+    margin:20px auto;
+    width:90%;
+    border-radius: 10px;
+    background:white;
+    padding:15px;
 }
+
 .company-left{
     text-align:right;
-    margin-top:20px;
+    margin:5% auto;
 }
 .company-info-text{
-    height:80px;
-    overflow:scroll;
+    /* height:80px; */
+    /* overflow:scroll; */
+    height:auto;
 }
 .company-info-text p{
     /* white-space: nowrap;  */
@@ -663,8 +669,16 @@ input:focus{
 .modal-body{
     width:550px;
 }
+
+.company-box{
+    transform:translateY(70%);
+}
+
 @media only screen and (max-width: 320px){
 
+    .company-box{
+        transform:translateY(0%);
+    }
     .mainText{
         font-size:20px;
     }
@@ -672,10 +686,6 @@ input:focus{
         font-size:30px !important;
     }
   
-    .about-keyWords{
-
-    }
-
     .experience-contents{
         width:290px !important
     }
@@ -693,10 +703,19 @@ input:focus{
         margin-left:0;
        
     }
+    .experience-wrapper{
+        width:100%;
+    }
+    .company-right{
+        width:300px !important;
+       
+    }
 }
 /* IPhone X */
 @media only screen and (max-width: 375px){
-
+    .company-box{
+        transform:translateY(0%);
+    }
     section{
         padding-top:20px;
     }
@@ -765,8 +784,9 @@ input:focus{
         min-width:375px !important;
     }
     .introWrapper p{
-        max-height:190px;
-        overflow:scroll;
+        /* max-height:190px;
+        overflow:scroll; */
+        height:auto;
     }
     .info-header{
         max-height:75px;
@@ -786,11 +806,18 @@ input:focus{
     .info-detail{
         min-width:auto;
     }
+  
 
 }
 
 
 @media only screen and (max-width: 414px){
+
+    /* Work experience */
+   
+    .company-box{
+        transform:translateY(0%);
+    }
     section{
         padding-top:20px;
     }
@@ -863,6 +890,9 @@ input:focus{
 
 @media only screen and (max-width: 768px){
 
+    .company-box{
+        transform:translateY(0%);
+    }
     body{
         padding:0;
         margin:0;
@@ -1000,8 +1030,13 @@ input:focus{
         display:none;
     }
     .company-info-text{
-        height:80px;
-        overflow:scroll;
+        height:auto;
+        
+        /* height:80px;
+        overflow:scroll; */
+    }
+    .company-left{
+        margin:5% auto
     }
     .home-btn{
         width:150px;
@@ -1037,5 +1072,10 @@ input:focus{
      }
      .project-content img{
         margin-right:0px;
+    }
+
+    .experience-wrapper{
+     width:100%;   
+     margin:0 auto;
     }
 }
